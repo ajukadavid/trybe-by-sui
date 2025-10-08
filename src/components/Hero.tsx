@@ -1,0 +1,33 @@
+import Image from 'next/image'
+
+export default function Hero() {
+  return (
+    <section className="relative h-screen overflow-hidden">
+      {/* Single Hero Image */}
+      <div className="relative h-full">
+        <Image
+          src="/images/sui/IMG_9773.JPG"
+          alt="Kai Trump Hero"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+      
+      {/* Overlay content */}
+      <div className="absolute inset-0  bg-opacity-30 flex items-center justify-center">
+        <div className="text-center text-red-400 max-w-4xl mt-12 px-4">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+           TRYBE BY SUI
+          </h1>
+          <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto">
+            From championship greens to millions online, Kai Trump unveils KT, elevated basics with a quiet mark.
+          </p>
+          <p className="text-base md:text-lg lg:text-xl max-w-2xl mx-auto">
+            Thoughtful fabric, graceful lines, made to live in.
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}
