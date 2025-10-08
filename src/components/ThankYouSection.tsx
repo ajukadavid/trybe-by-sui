@@ -8,11 +8,14 @@ export default function ThankYouSection() {
           </h2>
           <div className="text-lg text-gray-700 leading-relaxed">
             <p className="mb-6">
-            Trybe by Sui is an urban luxury fashion brand BASED IN aBUJA,nIGERIA, that seamlessly blends retro and contemporary styles. As a unisex brand, our mission is to craft elegant, high-quality pieces that make a statement, ensuring our clients exude sophistication and confidence wherever they go. We believe that your outfit speaks for you before you even say a word.            </p>
-            <p>
-            Our Vision
-            TO BECOME A GLOBALLY  recognized African lifestyle and design brand, known for transforming ideas into impactful fashion statements and creative experiences.
+              Trybe by Sui is an urban luxury fashion brand based in Abuja, Nigeria, that seamlessly blends retro and contemporary styles. As a unisex brand, our mission is to craft elegant, high-quality pieces that make a statement, ensuring our clients exude sophistication and confidence wherever they go. We believe that your outfit speaks for you before you even say a word.
             </p>
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-xl font-semibold text-black mb-4">Our Vision</h3>
+              <p className="text-gray-700">
+                To become a globally recognized African lifestyle and design brand, known for transforming ideas into impactful fashion statements and creative experiences.
+              </p>
+            </div>
           </div>
         </div>
       </div>

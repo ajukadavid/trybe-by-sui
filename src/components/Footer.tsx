@@ -44,7 +44,7 @@ export default function Footer() {
               <div className="mb-4">
                 <Image
                   src="/images/sui/remove-sui.png"
-                  alt="Kai Trump Shop"
+                  alt="Trybe by Sui"
                   width={100}
                   height={100}
                   className="mx-auto"

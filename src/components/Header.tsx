@@ -42,12 +42,12 @@ export default function Header() {
               <Link href="/" className="flex items-center">
                 <Image
                   src="/images/sui/remove-sui.png"
-                  alt="Kai Trump Shop"
+                  alt="Trybe by Sui"
                   width={50}
                   height={50}
                   className="h-12 w-12"
                 />
-                <span className="sr-only">Kai Trump Shop</span>
+                <span className="sr-only">Trybe by Sui</span>
               </Link>
             </div>
 
@@ -116,7 +116,7 @@ export default function Header() {
 
         {/* Mobile menu */}
         {isMobileMenuOpen && (
-            <div className="lg:hidden bg-black border-t border-gray-800">
+            <div className="lg:hidden bg-white text-black border-t border-gray-800">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link href="/" className="block px-3 py-2 text-black hover:text-gray-300 uppercase text-sm font-medium">
                 Home

@@ -12,29 +12,29 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Kai Trump Official - Kai Trump Shop',
-  description: 'From championship greens to millions online, Kai Trump unveils KT, elevated basics with a quiet mark. Thoughtful fabric, graceful lines, made to live in.',
-  keywords: 'Kai Trump Shop, kaitrump.shop',
-  authors: [{ name: 'AdornThemes' }],
+  title: 'Trybe by Sui - Urban Luxury Fashion Brand',
+  description: 'Trybe by Sui is an urban luxury fashion brand based in Abuja, Nigeria, that seamlessly blends retro and contemporary styles. Crafting elegant, high-quality pieces that make a statement.',
+  keywords: 'Trybe by Sui, urban luxury fashion, Abuja Nigeria, unisex fashion, African lifestyle brand',
+  authors: [{ name: 'Trybe by Sui' }],
   openGraph: {
-    siteName: 'Kai Trump Shop',
-    url: 'https://kaitrump.shop',
-    title: 'Kai Trump Official',
+    siteName: 'Trybe by Sui',
+    url: 'https://trybebysui.com',
+    title: 'Trybe by Sui - Urban Luxury Fashion',
     type: 'website',
-    description: 'From championship greens to millions online, Kai Trump unveils KT, elevated basics with a quiet mark. Thoughtful fabric, graceful lines, made to live in.',
+    description: 'Trybe by Sui is an urban luxury fashion brand based in Abuja, Nigeria, that seamlessly blends retro and contemporary styles. Crafting elegant, high-quality pieces that make a statement.',
     images: [
       {
         url: '/images/sui/IMG_5941.JPG',
         width: 1200,
         height: 1200,
-        alt: 'Kai Trump Shop',
+        alt: 'Trybe by Sui',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kai Trump Official',
-    description: 'From championship greens to millions online, Kai Trump unveils KT, elevated basics with a quiet mark. Thoughtful fabric, graceful lines, made to live in.',
+    title: 'Trybe by Sui - Urban Luxury Fashion',
+    description: 'Trybe by Sui is an urban luxury fashion brand based in Abuja, Nigeria, that seamlessly blends retro and contemporary styles. Crafting elegant, high-quality pieces that make a statement.',
   },
   robots: {
     index: true,
@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <head>
-        <link rel="canonical" href="https://kaitrump.shop" />
+        <link rel="canonical" href="https://trybebysui.com" />
         <meta name="theme-color" content="#000" />
         <meta name="format-detection" content="telephone=no" />
         <script
@@ -63,14 +63,20 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "http://schema.org",
               "@type": "Organization",
-              "name": "Kai Trump Shop",
-              "logo": "https://kaitrump.shop/images/KT-Logo-White-Drop.png@v=1757455146",
+              "name": "Trybe by Sui",
+              "description": "Urban luxury fashion brand based in Abuja, Nigeria, that seamlessly blends retro and contemporary styles.",
+              "logo": "https://trybebysui.com/images/sui/remove-sui.png",
               "sameAs": [
-                "https://x.com/kaitrump?",
-                "https://www.instagram.com/kaitrumpgolfer",
-                "https://www.youtube.com/@kaitrump"
+                "https://x.com/trybebysui",
+                "https://www.instagram.com/trybebysui",
+                "https://www.youtube.com/@trybebysui"
               ],
-              "url": "https://kaitrump.shop"
+              "url": "https://trybebysui.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Abuja",
+                "addressCountry": "Nigeria"
+              }
             })
           }}
         />
@@ -80,13 +86,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "http://schema.org",
               "@type": "WebSite",
-              "name": "Kai Trump Shop",
+              "name": "Trybe by Sui",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://kaitrump.shop/search?q={search_term_string}",
+                "target": "https://trybebysui.com/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               },
-              "url": "https://kaitrump.shop"
+              "url": "https://trybebysui.com"
             })
           }}
         />
