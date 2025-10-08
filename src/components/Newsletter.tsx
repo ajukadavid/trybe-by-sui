@@ -24,7 +24,7 @@ export default function Newsletter() {
       <section className="py-16 bg-gray-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-semibold text-black mb-4">Thank You!</h3>
-          <p className="text-black">You've been subscribed to our newsletter.</p>
+          <p className="text-black">You&apos;ve been subscribed to our newsletter.</p>
         </div>
       </section>
     )
