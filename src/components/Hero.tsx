@@ -16,8 +16,10 @@ export default function Hero() {
       
       {/* Overlay content */}
       <div className="absolute inset-0  bg-opacity-30 flex items-center justify-center">
-        <div className="text-center text-red-700 max-w-4xl mt-12 px-4">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+        <div className="text-center max-w-4xl mt-12 px-4">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-red-600" style={{
+            textShadow: '4px 4px 0px #000, -4px -4px 0px #000, 4px -4px 0px #000, -4px 4px 0px #000, 0px 4px 0px #000, 0px -4px 0px #000, 4px 0px 0px #000, -4px 0px 0px #000, 6px 6px 2px rgba(0,0,0,0.3), -6px -6px 2px rgba(0,0,0,0.3), 6px -6px 2px rgba(0,0,0,0.3), -6px 6px 2px rgba(0,0,0,0.3)'
+          }}>
            TRYBE BY SUI
           </h1>
           {/* <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto">
