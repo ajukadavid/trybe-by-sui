@@ -12,8 +12,9 @@ const heroImages = [
   '/images/sui/IMG_9731.JPG',
   '/images/sui/IMG_9788.JPG',
   '/images/sui/IMG_9813.JPG',
+  '/images/sui/IMG_9702.JPG',
   '/images/sui/IMG_9950.JPG',
-  '/images/sui/IMG_9702.JPG'
+
 ]
 
 export default function Hero() {
