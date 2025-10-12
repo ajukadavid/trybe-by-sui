@@ -99,11 +99,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans">
         <CartProvider>
-          <Header />
-          <main className="min-h-screen">
-            {children}
-          </main>
-          <Footer />
+          {children}
         </CartProvider>
       </body>
     </html>
