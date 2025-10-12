@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 const heroImages = [
+  '/images/sui/IMG_9773.JPG',
   '/images/sui/IMG_9782.JPG',
   '/images/sui/IMG_9738.JPG',
   '/images/sui/IMG_9798.JPG',

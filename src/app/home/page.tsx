@@ -4,6 +4,7 @@ import GallerySection1 from '@/components/GallerySection1'
 import VisionSection from '@/components/VisionSection'
 import GallerySection2 from '@/components/GallerySection2'
 import ProductGallery from '@/components/ProductGallery'
+import FooterHero from '@/components/FooterHero'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <VisionSection />
       <GallerySection2 />
       <ProductGallery />
+      <FooterHero />
     </div>
   )
 }

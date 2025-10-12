@@ -7,6 +7,7 @@ const products = [
   {
     id: 1,
     image: '/images/sui/IMG_9725.JPG',
+    hoverImage: '/images/sui/IMG_9726.JPG',
     name: 'Premium Shirt',
     price: '50,000',
     currency: 'Naira',
@@ -15,6 +16,7 @@ const products = [
   {
     id: 2,
     image: '/images/sui/IMG_9712.JPG',
+    hoverImage: '/images/sui/IMG_9714.JPG',
     name: 'Designer Shirt',
     price: '60,000',
     currency: 'Naira',
@@ -23,6 +25,7 @@ const products = [
   {
     id: 3,
     image: '/images/sui/IMG_9702.JPG',
+    hoverImage: '/images/sui/IMG_9698.JPG',
     name: 'Luxury Item',
     price: '70,000',
     currency: 'Naira',
@@ -31,6 +34,7 @@ const products = [
   {
     id: 4,
     image: '/images/sui/IMG_9731.JPG',
+    hoverImage: '/images/sui/IMG_9751.JPG',
     name: 'Complete Outfit',
     price: '68,000',
     currency: 'Naira',
@@ -38,23 +42,17 @@ const products = [
   },
   {
     id: 5,
-    image: '/images/sui/IMG_9792.JPG',
+    image: '/images/sui/IMG_9793.JPG',
+    hoverImage: '/images/sui/IMG_9792.JPG',
     name: 'Jacket & Pants Set',
     price: '95,000',
     currency: 'Naira',
     description: 'Premium jacket and pants combination'
   },
   {
-    id: 6,
-    image: '/images/sui/IMG_9793.JPG',
-    name: 'Designer Jacket',
-    price: '95,000',
-    currency: 'Naira',
-    description: 'High-end designer jacket'
-  },
-  {
     id: 7,
     image: '/images/sui/IMG_9813.JPG',
+    hoverImage: '/images/sui/IMG_9812.JPG',
     name: 'Premium Collection',
     price: '90,000',
     currency: 'Naira',
@@ -63,6 +61,7 @@ const products = [
   {
     id: 8,
     image: '/images/sui/IMG_9796.JPG',
+    hoverImage: '/images/sui/IMG_9795.JPG',
     name: 'Luxury Collection',
     price: '50,000',
     currency: 'Naira',
@@ -98,18 +97,35 @@ export default function ProductGallery() {
             >
               {/* Product Image Container */}
               <div className="relative aspect-square overflow-hidden rounded-lg bg-white shadow-lg">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+                {/* Default Image */}
+                <div className={`absolute inset-0 transition-opacity duration-500 ${
+                  hoveredProduct === product.id ? 'opacity-0' : 'opacity-100'
+                }`}>
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
                 
-                {/* Hover Overlay with Price */}
-                <div className={`absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center transition-opacity duration-300 ${
+                {/* Hover Image */}
+                <div className={`absolute inset-0 transition-opacity duration-500 ${
                   hoveredProduct === product.id ? 'opacity-100' : 'opacity-0'
                 }`}>
-                  <div className="text-center text-white">
+                  <Image
+                    src={product.hoverImage}
+                    alt={`${product.name} - Hover view`}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                
+                {/* Hover Overlay with Price */}
+                <div className={`absolute inset-0  bg-opacity-60 flex items-center justify-center transition-opacity duration-300 ${
+                  hoveredProduct === product.id ? 'opacity-100' : 'opacity-0'
+                }`}>
+                  {/* <div className="text-center text-red-500">
                     <div className="text-3xl font-bold mb-2">
                       ₦{product.price}
                     </div>
@@ -119,7 +135,7 @@ export default function ProductGallery() {
                     <div className="text-sm opacity-75 mt-1">
                       {product.description}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Price Badge (always visible) */}
