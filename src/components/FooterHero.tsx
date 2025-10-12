@@ -20,7 +20,7 @@ export default function FooterHero() {
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white" style={{
             textShadow: '4px 4px 0px #000, -4px -4px 0px #000, 4px -4px 0px #000, -4px 4px 0px #000, 0px 4px 0px #000, 0px -4px 0px #000, 4px 0px 0px #000, -4px 0px 0px #000, 6px 6px 2px rgba(0,0,0,0.5), -6px -6px 2px rgba(0,0,0,0.5), 6px -6px 2px rgba(0,0,0,0.5), -6px 6px 2px rgba(0,0,0,0.5)'
           }}>
-            URBAN LUXURY AT IT'S BEST
+            URBAN LUXURY AT IT&apos;S BEST
           </h2>
         </div>
       </div>
