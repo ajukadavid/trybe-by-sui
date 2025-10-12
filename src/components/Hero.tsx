@@ -20,9 +20,10 @@ export default function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   useEffect(() => {
+    // Start the slider immediately
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => 
-        prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
+        (prevIndex + 1) % heroImages.length
       )
     }, 4000) // Change image every 4 seconds
 
