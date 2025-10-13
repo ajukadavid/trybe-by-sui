@@ -34,7 +34,7 @@ export default function Hero() {
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Image Slider */}
-      <div className="relative h-full">
+      <div className="relative h-full bg-white">
         {heroImages.map((image, index) => (
           <div
             key={index}
@@ -46,7 +46,7 @@ export default function Hero() {
               src={image}
               alt={`Trybe by Sui Hero ${index + 1}`}
               fill
-              className="object-cover"
+              className="object-contain md:object-cover"
               priority={index === 0}
             />
           </div>
