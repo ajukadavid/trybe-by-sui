@@ -6,7 +6,7 @@ export default function FooterHero() {
       {/* Hero Image */}
       <div className="relative h-full">
         <Image
-          src="/images/sui/IMG_9808.JPG"
+          src="/images/sui/IMG_5990.JPG"
           alt="Trybe by Sui Footer Hero"
           fill
           className="object-cover"
