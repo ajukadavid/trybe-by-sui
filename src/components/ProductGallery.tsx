@@ -118,8 +118,8 @@ const newCollection = [
   },
   {
     id: 14,
-    image: '/images/sui/IMG_3114.JPG',
-    hoverImage: '/images/sui/IMG_3116.JPG',
+    image: 'https://image2url.com/images/1760693126469-bafd2510-d828-4c31-b0c4-620e2c1c7960.jpg',
+    hoverImage: 'https://image2url.com/images/1760693148778-e6aa13a3-41ad-4a0f-ade7-edbcc9004ea7.jpg',
     name: 'Trybe by Sui Blue and white Knitted vest and cap set',
     price: '60,000',
     currency: 'Naira',
@@ -127,7 +127,7 @@ const newCollection = [
   },
   {
     id: 15,
-    image: '/images/sui/IMG_3097.JPG',
+    image: 'https://image2url.com/images/1760693080080-f093cbf9-9ccc-4edc-b597-84d32baba30a.jpg',
     hoverImage: '/images/sui/IMG_3206.JPG',
     name: 'White and black Custom Jersey',
     price: '60,000',
