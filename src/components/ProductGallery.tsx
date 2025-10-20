@@ -7,7 +7,7 @@ const oldCollection = [
   {
     id: 1,
     image: '/images/sui/IMG_9712.JPG',
-    hoverImage: '/images/sui/IMG_9714.JPG',
+    hoverImage: 'https://postimg.cc/0MM0CwCQ',
     name: 'Red and black Trybe by Sui custom design comfy Sweatshirt',
     price: '60,000',
     currency: 'Naira',
@@ -137,7 +137,7 @@ const newCollection = [
   {
     id: 16,
     image: '/images/sui/IMG_3376.JPG',
-    hoverImage: '/images/sui/IMG_3106.JPG',
+    hoverImage: 'https://i.postimg.cc/260t8hc2/IMG-3106.jpg',
     name: 'Red and black Hockey Jersey',
     price: '65,000',
     currency: 'Naira',
