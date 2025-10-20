@@ -50,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en" className={poppins.variable} suppressHydrationWarning>
       <head>
         <link rel="canonical" href="https://trybebysui.com" />
         <meta name="theme-color" content="#000" />
@@ -95,7 +95,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans">
+      <body className="font-sans" suppressHydrationWarning>
         <CartProvider>
           {children}
         </CartProvider>
