@@ -1,13 +1,12 @@
 'use client'
 
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 const oldCollection = [
   {
     id: 1,
     image: '/images/sui/IMG_9712.JPG',
-    hoverImage: 'https://postimg.cc/0MM0CwCQ',
+    hoverImage: 'https://github.com/ajukadavid/trybe-by-sui/blob/main/public/images/sui/IMG_9714.jpg',
     name: 'Red and black Trybe by Sui custom design comfy Sweatshirt',
     price: '60,000',
     currency: 'Naira',
@@ -137,7 +136,7 @@ const newCollection = [
   {
     id: 16,
     image: '/images/sui/IMG_3376.JPG',
-    hoverImage: 'https://i.postimg.cc/260t8hc2/IMG-3106.jpg',
+    hoverImage: 'https://image2url.com/images/1760970114973-9654fcc1-abd0-434e-a667-28aec03c4ab7.jpg',
     name: 'Red and black Hockey Jersey',
     price: '65,000',
     currency: 'Naira',
@@ -205,11 +204,10 @@ export default function ProductGallery() {
                 <div className={`absolute inset-0 transition-opacity duration-500 ${
                   hoveredProduct === product.id ? 'opacity-0' : 'opacity-100'
                 }`}>
-                  <Image
+                  <img
                     src={product.image}
                     alt={product.name}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 
@@ -217,11 +215,10 @@ export default function ProductGallery() {
                 <div className={`absolute inset-0 transition-opacity duration-500 ${
                   hoveredProduct === product.id ? 'opacity-100' : 'opacity-0'
                 }`}>
-                  <Image
+                  <img
                     src={product.hoverImage}
                     alt={`${product.name} - Hover view`}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 
@@ -267,12 +264,10 @@ export default function ProductGallery() {
                   index === currentSlide ? 'opacity-100' : 'opacity-0'
                 }`}
               >
-                <Image
+                <img
                   src={image}
                   alt={`Trybe by Sui - Premium Fashion ${index + 1}`}
-                  fill
-                  className="object-cover"
-                  priority={index === 0}
+                  className="w-full h-full object-cover"
                 />
               </div>
             ))}
@@ -347,11 +342,10 @@ export default function ProductGallery() {
                 <div className={`absolute inset-0 transition-opacity duration-500 ${
                   hoveredProduct === product.id ? 'opacity-0' : 'opacity-100'
                 }`}>
-                  <Image
+                  <img
                     src={product.image}
                     alt={product.name}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 
@@ -359,11 +353,10 @@ export default function ProductGallery() {
                 <div className={`absolute inset-0 transition-opacity duration-500 ${
                   hoveredProduct === product.id ? 'opacity-100' : 'opacity-0'
                 }`}>
-                  <Image
+                  <img
                     src={product.hoverImage}
                     alt={`${product.name} - Hover view`}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 
