@@ -1,8 +1,6 @@
 import Hero from '@/components/Hero'
 import ThankYouSection from '@/components/ThankYouSection'
-import GallerySection1 from '@/components/GallerySection1'
 import VisionSection from '@/components/VisionSection'
-import GallerySection2 from '@/components/GallerySection2'
 import ProductGallery from '@/components/ProductGallery'
 import FooterHero from '@/components/FooterHero'
 

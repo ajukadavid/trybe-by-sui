@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 const oldCollection = [
   {
@@ -144,7 +145,7 @@ const newCollection = [
   }
 ]
 
-const products = [...oldCollection, ...newCollection]
+// const products = [...oldCollection, ...newCollection]
 
 // Hero slider images
 const heroImages = [
@@ -204,10 +205,11 @@ export default function ProductGallery() {
                 <div className={`absolute inset-0 transition-opacity duration-500 ${
                   hoveredProduct === product.id ? 'opacity-0' : 'opacity-100'
                 }`}>
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 
@@ -215,10 +217,11 @@ export default function ProductGallery() {
                 <div className={`absolute inset-0 transition-opacity duration-500 ${
                   hoveredProduct === product.id ? 'opacity-100' : 'opacity-0'
                 }`}>
-                  <img
+                  <Image
                     src={product.hoverImage}
                     alt={`${product.name} - Hover view`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 
@@ -264,10 +267,11 @@ export default function ProductGallery() {
                   index === currentSlide ? 'opacity-100' : 'opacity-0'
                 }`}
               >
-                <img
+                <Image
                   src={image}
                   alt={`Trybe by Sui - Premium Fashion ${index + 1}`}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
             ))}
@@ -342,10 +346,11 @@ export default function ProductGallery() {
                 <div className={`absolute inset-0 transition-opacity duration-500 ${
                   hoveredProduct === product.id ? 'opacity-0' : 'opacity-100'
                 }`}>
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 
@@ -353,10 +358,11 @@ export default function ProductGallery() {
                 <div className={`absolute inset-0 transition-opacity duration-500 ${
                   hoveredProduct === product.id ? 'opacity-100' : 'opacity-0'
                 }`}>
-                  <img
+                  <Image
                     src={product.hoverImage}
                     alt={`${product.name} - Hover view`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 

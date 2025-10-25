@@ -16,7 +16,7 @@ export default function ProductsPage() {
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Coming Soon</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our online store is currently under construction. We're working hard to bring you our complete collection of premium basics with thoughtful design and quality materials.
+                Our online store is currently under construction. We&apos;re working hard to bring you our complete collection of premium basics with thoughtful design and quality materials.
               </p>
             </div>
             
