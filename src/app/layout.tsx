@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { Poppins, Inter, Montserrat } from 'next/font/google'
 import './globals.css'
 import { CartProvider } from '@/lib/cart-context'
 
@@ -7,6 +7,18 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700', '800', '900'],
   variable: '--font-poppins',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-inter',
+})
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  variable: '--font-montserrat',
 })
 
 export const metadata: Metadata = {
@@ -50,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={poppins.variable} suppressHydrationWarning>
+    <html lang="en" className={`${poppins.variable} ${inter.variable} ${montserrat.variable}`} suppressHydrationWarning>
       <head>
         <link rel="canonical" href="https://trybebysui.com" />
         <meta name="theme-color" content="#000" />
