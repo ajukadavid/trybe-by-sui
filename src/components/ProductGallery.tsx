@@ -7,7 +7,7 @@ const oldCollection = [
   {
     id: 1,
     image: '/images/sui/IMG_9712.JPG',
-    hoverImage: '/images/sui/IMG_9714.JPG',
+    hoverImage: '/images/sui/IMG_9714.jpg',
     name: 'Red and black Trybe by Sui custom design comfy Sweatshirt',
     price: '60,000',
     currency: 'Naira',
