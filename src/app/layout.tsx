@@ -51,8 +51,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: '/images/favicon-16x16_c07db629-c2f4-414a-91cb-039a6515032a_32x32.png@v=1757454987',
-    apple: '/images/apple-touch-icon_152x.png@v=1757455003',
+    icon: '/favicon.ico',
   },
 }
 
@@ -77,9 +76,9 @@ export default function RootLayout({
               "description": "Urban luxury fashion brand based in Abuja, Nigeria, that seamlessly blends retro and contemporary styles.",
               "logo": "https://trybebysui.com/images/sui/remove-sui.png",
               "sameAs": [
-                "https://x.com/trybebysui",
-                "https://www.instagram.com/trybebysui",
-                "https://www.youtube.com/@trybebysui"
+                "https://x.com/sui_by?s=11",
+                "https://www.instagram.com/trybe_by_sui?igsh=NGZ6eXhtYzBleTY3&utm_source=qr",
+                "https://www.tiktok.com/@trybebysui?_t=ZS-90q75uqoCMW&_r=1"
               ],
               "url": "https://trybebysui.com",
               "address": {

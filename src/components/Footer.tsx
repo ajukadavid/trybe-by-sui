@@ -14,23 +14,8 @@ export default function Footer() {
             {/* Navigation Links */}
             <div className="text-center lg:text-left">
               <nav className="flex flex-wrap justify-center lg:justify-start gap-6">
-                <Link href="/faq" className="text-black hover:text-gray-300 uppercase text-sm">
-                  FAQ
-                </Link>
-                <Link href="mailto:support@kaitrump.shop" className="text-black hover:text-gray-300 uppercase text-sm">
-                  Customer Support
-                </Link>
                 <Link href="/contact" className="text-black hover:text-gray-300 uppercase text-sm">
                   Contact Us
-                </Link>
-                <Link href="/privacy" className="text-black hover:text-gray-300 uppercase text-sm">
-                  Privacy Policy
-                </Link>
-                    <Link href="/terms" className="text-black hover:text-gray-300 uppercase text-sm">
-                  Terms + Conditions
-                </Link>
-                <Link href="/accessibility" className="text-black hover:text-gray-300 uppercase text-sm">
-                  Accessibility
                 </Link>
               </nav>
             </div>
@@ -50,7 +35,7 @@ export default function Footer() {
               <h5 className="text-lg font-semibold mb-4">Stay Connected</h5>
               <div className="flex justify-center space-x-4">
                 <Link
-                  href="https://x.com/kaitrump"
+                  href="https://x.com/sui_by?s=11"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black hover:text-gray-300"
@@ -61,7 +46,7 @@ export default function Footer() {
                   </svg>
                 </Link>
                 <Link
-                  href="https://www.instagram.com/kaitrumpgolfer"
+                  href="https://www.instagram.com/trybe_by_sui?igsh=NGZ6eXhtYzBleTY3&utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black hover:text-gray-300"
@@ -72,18 +57,7 @@ export default function Footer() {
                   </svg>
                 </Link>
                 <Link
-                  href="https://www.youtube.com/@kaitrump"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-black hover:text-gray-300"
-                  aria-label="YouTube"
-                >
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                  </svg>
-                </Link>
-                <Link
-                  href="https://www.tiktok.com/@thekaitrumpgolfer"
+                  href="https://www.tiktok.com/@trybebysui?_t=ZS-90q75uqoCMW&_r=1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black hover:text-gray-300"
