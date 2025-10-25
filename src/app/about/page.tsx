@@ -1,19 +1,11 @@
-import Image from 'next/image'
 import Header from '@/components/Header'
+import AboutHero from '@/components/AboutHero'
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      {/* Hero Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold text-gray-900 mb-8">ABOUT TRYBE BY SUI</h1>
-            <div className="w-24 h-1 bg-red-600 mx-auto mb-8"></div>
-          </div>
-        </div>
-      </section>
+      <AboutHero />
 
       {/* Brand Story */}
       <section className="py-16 bg-white">

@@ -28,7 +28,6 @@ export default function LandingPage() {
       <button
         onClick={handleGetStarted}
         className="text-white text-xl font-semibold px-8 py-3 border-2 border-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105"
-        style={{ fontFamily: 'HappySwirly, cursive' }}
       >
         GET STARTED
       </button>
