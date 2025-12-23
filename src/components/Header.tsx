@@ -3,12 +3,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import { useCart } from '@/lib/cart-context'
+
+const SHOP_URL = 'https://trybe-by-sui.company.site/'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
-  const { cart } = useCart()
+
+  const handleProductsClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+    window.open(SHOP_URL, '_blank')
+  }
 
   return (
     <>
@@ -56,9 +61,13 @@ export default function Header() {
               <Link href="/" className="text-black hover:text-gray-300 uppercase text-sm font-medium">
                 Home
               </Link>
-              <Link href="/products" className="text-black hover:text-gray-300 uppercase text-sm font-medium">
+              <a 
+                href={SHOP_URL}
+                onClick={handleProductsClick}
+                className="text-black hover:text-gray-300 uppercase text-sm font-medium cursor-pointer"
+              >
                 Products
-              </Link>
+              </a>
               <Link href="/about" className="text-black hover:text-gray-300 uppercase text-sm font-medium">
                 About
               </Link>
@@ -66,18 +75,6 @@ export default function Header() {
                 Contact Us
               </Link>
             </nav>
-
-            {/* Cart */}
-            <div className="flex items-center">
-              <Link href="/cart" className="relative p-2 text-black hover:text-gray-300" aria-label="Shopping cart">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6" />
-                </svg>
-                <span className="absolute -top-1 -right-1 bg-white text-black text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                  {cart.itemCount}
-                </span>
-              </Link>
-            </div>
           </div>
         </div>
 
@@ -88,9 +85,13 @@ export default function Header() {
               <Link href="/" className="block px-3 py-2 text-black hover:text-gray-300 uppercase text-sm font-medium">
                 Home
               </Link>
-              <Link href="/products" className="block px-3 py-2 text-black hover:text-gray-300 uppercase text-sm font-medium">
+              <a 
+                href={SHOP_URL}
+                onClick={handleProductsClick}
+                className="block px-3 py-2 text-black hover:text-gray-300 uppercase text-sm font-medium cursor-pointer"
+              >
                 Products
-              </Link>
+              </a>
               <Link href="/about" className="block px-3 py-2 text-black hover:text-gray-300 uppercase text-sm font-medium">
                 About
               </Link>

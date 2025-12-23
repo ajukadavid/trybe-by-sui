@@ -4,6 +4,8 @@ import { useCart } from '@/lib/cart-context'
 import Image from 'next/image'
 import Link from 'next/link'
 
+const SHOP_URL = 'https://trybe-by-sui.company.site/'
+
 export default function CartPage() {
   const { cart, updateQuantity, removeFromCart, clearCart } = useCart()
 
@@ -14,12 +16,14 @@ export default function CartPage() {
           <div className="text-center">
             <h1 className="text-3xl font-bold text-gray-900 mb-4">Your Cart is Empty</h1>
             <p className="text-gray-600 mb-8">Looks like you haven&apos;t added any items to your cart yet.</p>
-            <Link
-              href="/"
+            <a
+              href={SHOP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition-colors"
             >
               Continue Shopping
-            </Link>
+            </a>
           </div>
         </div>
       </div>

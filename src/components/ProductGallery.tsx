@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
+const SHOP_URL = 'https://trybe-by-sui.company.site/'
+
 const oldCollection = [
   {
     id: 1,
@@ -198,6 +200,7 @@ export default function ProductGallery() {
               className="relative group cursor-pointer"
               onMouseEnter={() => setHoveredProduct(product.id)}
               onMouseLeave={() => setHoveredProduct(null)}
+              onClick={() => window.open(SHOP_URL, '_blank')}
             >
               {/* Product Image Container */}
               <div className="relative aspect-square overflow-hidden rounded-lg bg-white shadow-lg">
@@ -339,6 +342,7 @@ export default function ProductGallery() {
               className="relative group cursor-pointer"
               onMouseEnter={() => setHoveredProduct(product.id)}
               onMouseLeave={() => setHoveredProduct(null)}
+              onClick={() => window.open(SHOP_URL, '_blank')}
             >
               {/* Product Image Container */}
               <div className="relative aspect-square overflow-hidden rounded-lg bg-white shadow-lg">
@@ -401,7 +405,10 @@ export default function ProductGallery() {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <button className="bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+          <button 
+            onClick={() => window.open(SHOP_URL, '_blank')}
+            className="bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+          >
             View All Products
           </button>
         </div>
